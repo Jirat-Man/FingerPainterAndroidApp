@@ -7,30 +7,49 @@
     tools:context=".MainActivity">
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/frameLayout">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <view
-            android:id="@+id/myFingerPainterViewId"
-            class="com.example.coursework1.FingerPainterView"
+            android:id="@+id/FingerPainterViewId"
+            class="com.example.scyjm5_cw1.FingerPainterView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:layout_conversion_absoluteHeight="731dp"
-            tools:layout_editor_absoluteY="0dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_conversion_absoluteWidth="411dp" />
+            android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="changeC"
-            android:text="@string/button"
-            tools:layout_conversion_absoluteHeight="48dp"
-            tools:layout_conversion_absoluteWidth="411dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp" />
     </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/GalleryImage"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:background="@drawable/gallery" />
+
+        <ImageButton
+            android:id="@+id/DownloadImage"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:background="@drawable/download" />
+
+        <ImageButton
+            android:id="@+id/BrushImage"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:background="@drawable/brush" />
+
+        <ImageButton
+            android:id="@+id/PaletteImage"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_marginEnd="311dp"
+            android:background="@drawable/palette" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
